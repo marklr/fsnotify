@@ -48,6 +48,10 @@ func NewWatcher() (*Watcher, error) {
 	return w, nil
 }
 
+func (w *Watcher) String() string {
+	return "watcher.windows"
+}
+
 // Close removes all watches and closes the events channel.
 func (w *Watcher) Close() error {
 	if w.isClosed {

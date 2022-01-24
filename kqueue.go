@@ -64,6 +64,10 @@ func NewWatcher() (*Watcher, error) {
 	return w, nil
 }
 
+func (w *Watcher) String() string {
+	return "watcher.kqueue"
+}
+
 // Close removes all watches and closes the events channel.
 func (w *Watcher) Close() error {
 	w.mu.Lock()

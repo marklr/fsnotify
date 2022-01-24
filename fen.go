@@ -36,3 +36,7 @@ func (w *Watcher) Add(name string) error {
 func (w *Watcher) Remove(name string) error {
 	return nil
 }
+
+func (w *Watcher) String() string {
+	return "watcher.fen"
+}

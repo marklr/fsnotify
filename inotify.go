@@ -61,6 +61,10 @@ func NewWatcher() (*Watcher, error) {
 	return w, nil
 }
 
+func (w *Watcher) String() string {
+	return "watcher.inotify"
+}
+
 func (w *Watcher) isClosed() bool {
 	select {
 	case <-w.done:
