@@ -73,7 +73,6 @@ func newFdPoller(fd int) (*fdPoller, error) {
 	return poller, nil
 }
 
-
 // Wait using epoll.
 // Returns true if something is ready to be read,
 // false if there is not.
